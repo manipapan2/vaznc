@@ -89,6 +89,7 @@
 
 
     .bodyFake{
+        /* position: relative; */
         top: 0;
         left: 0;
         display: flex;
@@ -104,7 +105,9 @@
     position: absolute;
     justify-content: center;
     align-items: center;
-    display:grid;
+    display: grid;
+    display:flex;
+    flex-direction: column;
     width: 400px;
     height: 200px;
     background: rgb(2,0,36);
@@ -124,7 +127,7 @@
 
     @media only screen and (max-width: 700px) {
         .divIn{
-            padding-top:100px;
+            /* bottom: 30px; */
         }
 
 
@@ -140,21 +143,21 @@
 
 
         .pIN{
-            margin-top: 120px;
+            /* bottom: 30px; */
         }
 
 
         button{
             font-size: 20px;
-            margin-bottom: 120px;
+            /* bottom: 30px; */
         }
     }
 </style>
 <body>
-    <div class="bodyFake container">
+    <div class="bodyFake">
 
 
-        <div class="divIn container-fluid">
+        <div class="divIn">
 
             <div class="pIn">
             <input type="number" id="Input_Number" inputmode="decimal" maxlength="1">
